@@ -1,37 +1,24 @@
 const express = require('express');
 const cors = require('cors');
-const { PORT } = require('../config/config');
 const {routerAPI} = require('../routes/index.routes');
 const {logErrors,errorHandler,boomErrorHandler  } = require('../middlewares/error.middlewares');
-
-const appMain = async() => {
-    try{
-        const app = express();
-
-        //Middlewares
-        app.use(express.json());
-        app.use(cors());
+const morgan = require('morgan');
 
 
-        //Rutas
-        routerAPI(app);
+const app = express();
 
-        //Middlewares de error
-        app.use(logErrors);
-        app.use(boomErrorHandler);
-        app.use(errorHandler);
+//Middlewares
+app.use(express.json());
+app.use(cors());
+app.use(morgan('dev'));
 
-        //Port
-        app.listen(PORT, () => {
-            console.log(`Server running on port ${PORT}`);
-        });
+//Rutas
+routerAPI(app);
 
-    }catch (error) {
-        console.log(error);
-    }
-}
+//Middlewares de error
+app.use(logErrors);
+app.use(boomErrorHandler);
+app.use(errorHandler);
 
 // Settings
-module.exports = {
-    appMain,
-};
+module.exports = app;

@@ -2,7 +2,7 @@
 // Aqui pasaremos los middlewares que voy a usar para controlar los errorres
 
 const logErrors = (err, req, res, next) => {
-    console.log(err);
+    //console.log(err);
     next(err);
   }
 
