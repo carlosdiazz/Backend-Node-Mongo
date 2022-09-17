@@ -30,7 +30,7 @@ const updateProductById = async(req, res, next) => {
         if(!productUpdate){
             throw boom.badImplementation('Error al actualizar el producto');
         }
-        sucessResponse(req, res, product, 'Producto actualizado correctamente', 200);
+        sucessResponse(req, res, productUpdate, 'Producto actualizado correctamente', 200);
     }
     catch(err){
         next(err);
