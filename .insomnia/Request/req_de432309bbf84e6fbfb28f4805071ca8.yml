@@ -1,0 +1,32 @@
+_id: req_de432309bbf84e6fbfb28f4805071ca8
+type: Request
+parentId: fld_393829363b944c84b40bbbae1360f865
+modified: 1663427073522
+created: 1663426793076
+url: "{{ _.URL_NODE }}/api/v1/products"
+name: CreateProduct
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"name":"Product 4",
+    	"category":"Hola",
+    	"price":34,
+    	"imgUrl":"https://hola.com"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_959a660370244ae0be942e6187efab71
+authentication: {}
+metaSortKey: -1663426793076
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

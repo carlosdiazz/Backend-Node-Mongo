@@ -1,0 +1,29 @@
+_id: req_93b63abc5a104487bc215c1330098ff4
+type: Request
+parentId: fld_393829363b944c84b40bbbae1360f865
+modified: 1663427004393
+created: 1663426794274
+url: "{{ _.URL_NODE }}/api/v1/products/6324e85d894859af965ef72b"
+name: UpdateProduct
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"name":"Otrro name 3"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_6873eac99c8143b68810907985f5a9ef
+authentication: {}
+metaSortKey: -1663426794274
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

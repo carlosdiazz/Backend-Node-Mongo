@@ -1,0 +1,21 @@
+_id: req_645c245643cb4b2aa9a9568f4042102e
+type: Request
+parentId: fld_393829363b944c84b40bbbae1360f865
+modified: 1663426885709
+created: 1663426796271
+url: "{{ _.URL_NODE }}/api/v1/products/6324f1574b0faaba5c807852"
+name: OneProduct
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1663426796271
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
