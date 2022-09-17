@@ -1,4 +1,4 @@
-const {Schema, Model} = require('mongoose');
+const {Schema, model} = require('mongoose');
 
 const roleSchema = new Schema({
     name: {
@@ -15,4 +15,4 @@ const roleSchema = new Schema({
     versionKey: false
 });
 
-module.exports = Model('Role', roleSchema);
+module.exports = model('Role', roleSchema);
