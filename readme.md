@@ -3,8 +3,8 @@
 Este sera un proyecto de prueba de un backend, siguiendo los video de FAZT, Usaremos las siguientes tencologia:
 - Node
 - Expres
-- Sequelize
-- PostgreSQL
+- MONGOSE
+- MONGO
 - JWT
 - Entre otras.
 
